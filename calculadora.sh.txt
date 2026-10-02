@@ -1,0 +1,30 @@
+#!/ bin / bash
+ # ============================================
+ # Calculadora en Bash - Version 1
+ # Estructura con if/ elif
+ # ============================================
+
+read -p " Ingresa el primer numero : " num1
+read -p " Ingresa el segundo numero : " num2
+
+ echo " Operacion a realizar :"
+ echo "1) Sumar "
+ echo "2) Restar "
+ echo "3) Multiplicar "
+ echo "4) Dividir "
+read -p " Opcion : " opcion
+
+ if [ " $opcion " = "1" ]; then
+ echo " Resultado : $(( num1 + num2 ))"
+ elif [ " $opcion " = "2" ]; then
+echo " Resultado : $(( num1 - num2 ))"
+ elif [ " $opcion " = "3" ]; then
+ elif [ " $opcion " = "4" ]; then
+ if [ " $num2 " = "0" ]; then
+ echo " Error : division por cero "
+ else
+ echo " Resultado : $(( num1 / num2 ))"
+ fi
+ else
+ echo " Opcion no valida "
+ fi
